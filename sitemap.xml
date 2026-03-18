@@ -3,84 +3,56 @@
 
   <url>
     <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#bienvenida</loc>
-    <lastmod>2026-03-15</lastmod>
+    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/reflexiones.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#reflexiones</loc>
-    <lastmod>2026-03-15</lastmod>
+    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/galeria.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/canciones.html</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/noticias.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#organigrama</loc>
-    <lastmod>2026-03-15</lastmod>
+    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/formacion.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#apostolado</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#historia</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#mensaje</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#galeria</loc>
-    <lastmod>2026-03-15</lastmod>
+    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/rosario-aurora.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#canciones</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#noticias</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#unete</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/#enlaces</loc>
-    <lastmod>2026-03-15</lastmod>
+    <loc>https://apostoladodefatimamallorca.github.io/fatima-mallorca/enlaces.html</loc>
+    <lastmod>2026-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
