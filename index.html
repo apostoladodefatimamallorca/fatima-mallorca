@@ -1826,7 +1826,7 @@ html, body {
 </style><style>
 @media (max-width: 768px) {
   /* Show hamburger label */
-  label[for="menu-toggle"] { display: flex !important; }
+  #hamburger-btn { display: flex !important; }
 
   /* Hide nav by default */
   #main-nav {
@@ -1897,7 +1897,7 @@ html, body {
     color: #c9a84c !important;
   }
   /* Mostrar botón hamburguesa */
-  #hamburger-label {
+  #hamburger-btn {
     display: flex !important;
   }
   /* Header position for dropdown */
@@ -2091,7 +2091,7 @@ html, body {
     color: #c9a84c !important;
   }
   /* Mostrar botón hamburguesa */
-  #hamburger-label {
+  #hamburger-btn {
     display: flex !important;
   }
   /* Header position for dropdown */
@@ -2252,12 +2252,13 @@ header {
 
     <nav>
       <nav>
-      <input type="checkbox" id="menu-toggle" style="display:none;">
-      <label for="menu-toggle" style="display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;" id="hamburger-label">
+      <button id="hamburger-btn" onclick="toggleMenu()" 
+        style="display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;-webkit-tap-highlight-color:transparent;"
+        aria-label="Menú">
         <span style="display:block;width:24px;height:2px;background:#c9a84c;"></span>
         <span style="display:block;width:24px;height:2px;background:#c9a84c;"></span>
         <span style="display:block;width:24px;height:2px;background:#c9a84c;"></span>
-      </label>
+      </button>
       <ul id="main-nav">
         <li><a href="#bienvenida">Bienvenida</a></li>
         <li><a href="reflexiones.html">Reflexiones</a></li>
@@ -3223,19 +3224,29 @@ document.addEventListener('keydown', function(e) {
 function toggleMenu() {
   var nav = document.getElementById('main-nav');
   if (!nav) return;
-  nav.classList.toggle('open');
+  if (nav.classList.contains('open')) {
+    nav.classList.remove('open');
+  } else {
+    nav.classList.add('open');
+  }
 }
-// Close menu when clicking outside
+// Close menu when clicking/touching outside
 document.addEventListener('click', function(e) {
   var nav = document.getElementById('main-nav');
-  var label = document.getElementById('hamburger-label');
-  var toggle = document.getElementById('menu-toggle');
-  if (!nav || !label) return;
-  if (!nav.contains(e.target) && !label.contains(e.target)) {
+  var btn = document.getElementById('hamburger-btn');
+  if (!nav || !btn) return;
+  if (!nav.contains(e.target) && !btn.contains(e.target)) {
     nav.classList.remove('open');
-    if (toggle) toggle.checked = false;
   }
 });
+document.addEventListener('touchstart', function(e) {
+  var nav = document.getElementById('main-nav');
+  var btn = document.getElementById('hamburger-btn');
+  if (!nav || !btn) return;
+  if (!nav.contains(e.target) && !btn.contains(e.target)) {
+    nav.classList.remove('open');
+  }
+}, {passive: true});
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('#main-nav a').forEach(function(a) {
     a.addEventListener('click', function() {

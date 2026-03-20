@@ -1779,7 +1779,7 @@ html, body {
 </style><style>
 @media (max-width: 768px) {
   /* Show hamburger label */
-  label[for="menu-toggle"] { display: flex !important; }
+  #hamburger-btn { display: flex !important; }
 
   /* Hide nav by default */
   #main-nav {
@@ -2107,7 +2107,7 @@ header {
   #main-nav li { width: 100% !important; border-bottom: 1px solid rgba(201,168,76,0.15) !important; }
   #main-nav li a { display: block !important; padding: 12px 24px !important; font-size: 0.75rem !important; color: #f5f0e8 !important; }
   #main-nav li a:hover { background: rgba(201,168,76,0.15) !important; color: #c9a84c !important; }
-  #hamburger-label { display: flex !important; }
+  #hamburger-btn { display: flex !important; }
   header { position: sticky !important; top: 0 !important; z-index: 1000 !important; overflow: visible !important; }
   .header-inner { position: relative !important; }
 }
@@ -2129,12 +2129,13 @@ header {
 
     <nav>
       <nav>
-      <input type="checkbox" id="menu-toggle" style="display:none;">
-      <label for="menu-toggle" style="display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;" id="hamburger-label">
+      <button id="hamburger-btn" onclick="toggleMenu()" 
+        style="display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;-webkit-tap-highlight-color:transparent;"
+        aria-label="Menú">
         <span style="display:block;width:24px;height:2px;background:#c9a84c;"></span>
         <span style="display:block;width:24px;height:2px;background:#c9a84c;"></span>
         <span style="display:block;width:24px;height:2px;background:#c9a84c;"></span>
-      </label>
+      </button>
       <ul id="main-nav">
         <li><a href="index.html#bienvenida">Bienvenida</a></li>
         <li><a href="reflexiones.html">Reflexiones</a></li>
@@ -2426,8 +2427,20 @@ document.addEventListener('keydown', function(e) {
 function toggleMenu() {
   var nav = document.getElementById('main-nav');
   if (!nav) return;
-  nav.classList.toggle('open');
+  if (nav.classList.contains('open')) {
+    nav.classList.remove('open');
+  } else {
+    nav.classList.add('open');
+  }
 }
+document.addEventListener('touchstart', function(e) {
+  var nav = document.getElementById('main-nav');
+  var btn = document.getElementById('hamburger-btn');
+  if (!nav || !btn) return;
+  if (!nav.contains(e.target) && !btn.contains(e.target)) {
+    nav.classList.remove('open');
+  }
+}, {passive: true});
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('#main-nav a').forEach(function(a) {
     a.addEventListener('click', function() {
