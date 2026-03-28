@@ -2460,7 +2460,7 @@ document.addEventListener('click', function(e) {
 });
 
 <!-- ===== AVISO DE COOKIES ===== -->
-<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:linear-gradient(135deg,#1a0508,#2a0a15);border-top:3px solid #c9a84c;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 -4px 20px rgba(0,0,0,0.3);">
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:99999;background:linear-gradient(135deg,#1a0508,#2a0a15);border-top:3px solid #c9a84c;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-shadow:0 -4px 20px rgba(0,0,0,0.3);">
   <div style="flex:1;min-width:200px;">
     <div style="font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.2em;color:#c9a84c;text-transform:uppercase;margin-bottom:4px;">Aviso de cookies</div>
     <p style="font-family:'Cormorant Garamond',serif;font-size:0.95rem;color:rgba(245,240,232,0.9);margin:0;line-height:1.5;">
@@ -2521,9 +2521,11 @@ document.addEventListener('click', function(e) {
     document.getElementById('cookie-info').style.display = 'none';
   }
   // Show banner only if not yet decided
-  if (localStorage.getItem('cookies_aceptadas')) {
-    document.getElementById('cookie-banner').style.display = 'none';
-  }
+  window.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('cookies_aceptadas')) {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  });
 </script>
 <!-- ===== FIN AVISO COOKIES ===== -->
 
