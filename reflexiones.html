@@ -2271,24 +2271,78 @@ header {
 
   </div>
 </article>
-<!-- FIN ARTÍCULO José Francisco 6 abril 2026 -->    <!-- Tarjeta: Catalina Bauzá - 27 marzo 2026 -->
-    <a href="#catalina-entrevista" onclick="document.getElementById('catalina-entrevista-full').style.display='block';this.closest('div').style.display='none';return false;"
-       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.07);transition:transform 0.3s,box-shadow 0.3s;"
-       onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.12)'"
-       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.07)'">
-      <div style="font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.2em;color:#c9a84c;text-transform:uppercase;margin-bottom:10px;">27 de marzo de 2026 · Catalina Bauzá</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#4a0a1a;margin:0 0 12px;line-height:1.3;">«Soy la criadita de María» — Entrevista a Catalina Bauzá</h3>
-      <p style="font-family:'Cormorant Garamond',serif;font-size:0.98rem;color:#5c3d2e;line-height:1.65;font-style:italic;margin:0 0 18px;">«Tengo una deuda que jamás le podré pagar a la Virgen. Y de ahí salió la idea de volver a instaurar el Rosario de la Aurora en Palma...»</p>
-      <span style="font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;border-bottom:1px solid #c9a84c;padding-bottom:2px;">Leer artículo →</span>
+<!-- FIN ARTÍCULO José Francisco 6 abril 2026 -->
+<!-- Artículos anteriores -->
+<div style="margin:48px 0 60px;padding:0 8px;">
+
+  <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px;">
+    <div style="flex:1;height:1px;background:linear-gradient(to right,rgba(107,26,42,0.3),transparent);"></div>
+    <span style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.25em;color:#6b1a2a;text-transform:uppercase;">Artículos anteriores</span>
+    <div style="flex:1;height:1px;background:linear-gradient(to left,rgba(107,26,42,0.3),transparent);"></div>
+  </div>
+
+  <div id="grid-anteriores" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;">
+
+    <!-- Tarjeta: Catalina Bauzá -->
+    <a onclick="document.getElementById('grid-anteriores').style.display='none';document.getElementById('art-catalina').style.display='block';document.getElementById('btn-volver-anterior').style.display='block';window.scrollTo(0,0);return false;" href="#"
+       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.1)'"
+       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)'">
+      <div style="font-family:'Cinzel',serif;font-size:0.5rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;margin-bottom:6px;">27 mar 2026 · Catalina Bauzá</div>
+      <h4 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#4a0a1a;margin:0 0 8px;line-height:1.3;">«Soy la criadita de María»</h4>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.85rem;color:#5c3d2e;line-height:1.5;font-style:italic;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">«Tengo una deuda que jamás le podré pagar a la Virgen...»</p>
     </a>
 
-<!-- Artículo completo Catalina (oculto) -->
-<div id="catalina-entrevista-full" style="display:none;margin-top:40px;">
-  <button onclick="document.getElementById('catalina-entrevista-full').style.display='none';"
-          style="background:transparent;border:1px solid #c9a84c;color:#c9a84c;font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;padding:8px 20px;cursor:pointer;margin-bottom:24px;">
-    ← Volver
+    <!-- Tarjeta: Rafael 25 marzo -->
+    <a onclick="document.getElementById('grid-anteriores').style.display='none';document.getElementById('art-rafael-semana-santa-full').style.display='block';document.getElementById('btn-volver-anterior').style.display='block';window.scrollTo(0,0);return false;" href="#"
+       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.1)'"
+       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)'">
+      <div style="font-family:'Cinzel',serif;font-size:0.5rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;margin-bottom:6px;">25 mar 2026 · Rafael Verger</div>
+      <h4 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#4a0a1a;margin:0 0 8px;line-height:1.3;">Semana Santa: ¿vacaciones o encuentro con Dios?</h4>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.85rem;color:#5c3d2e;line-height:1.5;font-style:italic;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">«La Semana Santa ha arrancado con un tiempo espléndido...»</p>
+    </a>
+
+    <!-- Tarjeta: El hombre -->
+    <a onclick="document.getElementById('grid-anteriores').style.display='none';document.getElementById('art-josefco-22mar-full').style.display='block';document.getElementById('btn-volver-anterior').style.display='block';window.scrollTo(0,0);return false;" href="#"
+       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.1)'"
+       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)'">
+      <div style="font-family:'Cinzel',serif;font-size:0.5rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;margin-bottom:6px;">22 mar 2026 · José Francisco</div>
+      <h4 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#4a0a1a;margin:0 0 8px;line-height:1.3;">El hombre que quiso ocupar el lugar de Cristo</h4>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.85rem;color:#5c3d2e;line-height:1.5;font-style:italic;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">«Un hombre rezaba con frecuencia delante de un crucifijo...»</p>
+    </a>
+
+    <!-- Tarjeta: Cuando una historia -->
+    <a onclick="document.getElementById('grid-anteriores').style.display='none';document.getElementById('art-josefco-17mar-full').style.display='block';document.getElementById('btn-volver-anterior').style.display='block';window.scrollTo(0,0);return false;" href="#"
+       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.1)'"
+       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)'">
+      <div style="font-family:'Cinzel',serif;font-size:0.5rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;margin-bottom:6px;">17 mar 2026 · José Francisco</div>
+      <h4 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#4a0a1a;margin:0 0 8px;line-height:1.3;">Cuando una historia pequeña cambia la historia</h4>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.85rem;color:#5c3d2e;line-height:1.5;font-style:italic;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">«El Libro de Rut es uno de los relatos más breves de la Biblia...»</p>
+    </a>
+
+    <!-- Tarjeta: Nueva Evangelización -->
+    <a onclick="document.getElementById('grid-anteriores').style.display='none';document.getElementById('art-rafael-verger-full').style.display='block';document.getElementById('btn-volver-anterior').style.display='block';window.scrollTo(0,0);return false;" href="#"
+       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;"
+       onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.1)'"
+       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 2px 12px rgba(0,0,0,0.06)'">
+      <div style="font-family:'Cinzel',serif;font-size:0.5rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;margin-bottom:6px;">9 mar 2026 · Rafael Verger</div>
+      <h4 style="font-family:'Playfair Display',serif;font-size:0.95rem;color:#4a0a1a;margin:0 0 8px;line-height:1.3;">Hacia una Nueva Evangelización</h4>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:0.85rem;color:#5c3d2e;line-height:1.5;font-style:italic;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">«La fe hay que cuidarla. Como pasar de una acción personal de fe a una acción expansiva...»</p>
+    </a>
+
+  </div>
+
+  <!-- Botón volver (compartido) -->
+  <button id="btn-volver-anterior" onclick="document.querySelectorAll('[id^=art-]').forEach(d=>d.style.display='none');document.getElementById('grid-anteriores').style.display='grid';window.scrollTo(0,0);" 
+          style="display:none;background:transparent;border:1px solid #c9a84c;color:#c9a84c;font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;padding:8px 20px;cursor:pointer;margin:20px 0 8px;">
+    ← Volver a artículos anteriores
   </button>
-  <!-- ARTÍCULO: Entrevista Catalina - 27 marzo 2026 -->
+
+  <!-- Artículos ocultos -->
+  <div id="art-catalina" style="display:none;"><!-- ARTÍCULO: Entrevista Catalina - 27 marzo 2026 -->
 <article style="margin-bottom:60px;">
 
   <!-- Imagen hero -->
@@ -2477,50 +2531,160 @@ header {
 
   </div>
 </article>
-<!-- FIN ARTÍCULO Entrevista Catalina -->
-</div>
+<!-- FIN ARTÍCULO Entrevista Catalina --></div>
+
+  
+
+  
+
+  
+
+  
 
 </div>
 
-    <!-- Tarjeta: El hombre - José Francisco - 22 marzo 2026 -->
-    <a href="#josefco-22mar" onclick="document.getElementById('josefco-22mar-full').style.display='block';this.closest('div').style.display='none';return false;"
-       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.07);transition:transform 0.3s,box-shadow 0.3s;"
-       onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.12)'"
-       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.07)'">
-      <div style="font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.2em;color:#c9a84c;text-transform:uppercase;margin-bottom:10px;">22 de marzo de 2026 · José Francisco</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#4a0a1a;margin:0 0 12px;line-height:1.3;">El hombre que quiso ocupar el lugar de Cristo</h3>
-      <p style="font-family:'Cormorant Garamond',serif;font-size:0.98rem;color:#5c3d2e;line-height:1.65;font-style:italic;margin:0 0 18px;">«Un hombre rezaba con frecuencia delante de un crucifijo. Mirando a Jesús en la cruz, pensaba que el mundo estaba lleno de injusticias...»</p>
-      <span style="font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;border-bottom:1px solid #c9a84c;padding-bottom:2px;">Leer artículo →</span>
-    </a>
-
-    <!-- Tarjeta: Cuando una historia - José Fco - 17 marzo 2026 -->
-    <a href="#josefco-17mar" onclick="document.getElementById('josefco-17mar-full').style.display='block';this.closest('div').style.display='none';return false;"
-       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.07);transition:transform 0.3s,box-shadow 0.3s;"
-       onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.12)'"
-       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.07)'">
-      <div style="font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.2em;color:#c9a84c;text-transform:uppercase;margin-bottom:10px;">17 de marzo de 2026 · José Francisco</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#4a0a1a;margin:0 0 12px;line-height:1.3;">Cuando una historia pequeña cambia la historia</h3>
-      <p style="font-family:'Cormorant Garamond',serif;font-size:0.98rem;color:#5c3d2e;line-height:1.65;font-style:italic;margin:0 0 18px;">«El Libro de Rut es uno de los relatos más breves de la Biblia, pero cuenta una historia muy humana...»</p>
-      <span style="font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;border-bottom:1px solid #c9a84c;padding-bottom:2px;">Leer artículo →</span>
-    </a>
-
-    <!-- Tarjeta: Rafael Verger - 9 marzo 2026 -->
-    <a href="#rafael-verger" onclick="document.getElementById('rafael-verger-full').style.display='block';this.closest('div').style.display='none';return false;"
-       style="text-decoration:none;display:block;background:#fff;border-top:3px solid #c9a84c;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.07);transition:transform 0.3s,box-shadow 0.3s;"
-       onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 30px rgba(0,0,0,0.12)'"
-       onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.07)'">
-      <div style="font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.2em;color:#c9a84c;text-transform:uppercase;margin-bottom:10px;">9 de marzo de 2026 · Rafael Verger</div>
-      <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;color:#4a0a1a;margin:0 0 12px;line-height:1.3;">Hacia una Nueva Evangelización</h3>
-      <p style="font-family:'Cormorant Garamond',serif;font-size:0.98rem;color:#5c3d2e;line-height:1.65;font-style:italic;margin:0 0 18px;">«La fe hay que cuidarla. Como pasar de una acción personal de fe a una acción expansiva...»</p>
-      <span style="font-family:'Cinzel',serif;font-size:0.55rem;letter-spacing:0.15em;color:#c9a84c;text-transform:uppercase;border-bottom:1px solid #c9a84c;padding-bottom:2px;">Leer artículo →</span>
-    </a>
-
+<div id="art-josefco-22mar-full" style="display:none;margin-top:20px;">
+<article style="margin-bottom:60px;">
+  <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:32px;text-align:center;">
+    <div style="display:inline-block;background:#c9a84c;color:#4a0a1a;font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;padding:6px 14px;margin-bottom:14px;font-weight:700;">✦ Reflexión espiritual</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.4rem,4vw,2rem);color:#f5f0e8;font-weight:700;line-height:1.2;margin:0;">El hombre que quiso ocupar el lugar de Cristo</h2>
   </div>
-</div>
-
-      </div>
+  <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:14px 32px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div style="font-family:'Playfair Display',serif;font-size:1rem;color:#f5f0e8;font-style:italic;">José Francisco</div>
+    <div style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.15em;color:rgba(201,168,76,0.85);text-transform:uppercase;">22 de marzo de 2026</div>
+  </div>
+  <div style="background:#fff;padding:40px 32px;border:1px solid rgba(201,168,76,0.2);border-top:none;font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.9;color:#3a2010;">
+    <p style="margin-bottom:24px;"><span style="font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:#6b1a2a;float:left;line-height:0.82;margin:8px 12px 0 0;">U</span>n hombre rezaba con frecuencia delante de un crucifijo. Mirando a Jesús en la cruz, pensaba que el mundo estaba lleno de injusticias que él no entendía. Un día, mirando fijamente el crucifijo, dijo en voz alta: «Señor, permíteme ocupar tu lugar aunque sea por un momento. Déjame estar en la cruz y tú baja aquí. Quiero sentir lo que tú sentiste.»</p>
+    <p style="margin-bottom:24px;">Y en ese instante, de manera misteriosa, el hombre se encontró en la cruz y Jesús estaba de pie ante él. El hombre, desde arriba, miraba todo con nuevos ojos. Veía la iglesia, las personas que entraban y salían, el bullicio de la vida ordinaria. Y en un momento dado, entró un hombre adinerado y oró, y después depositó una gran limosna. El hombre en la cruz pensó: «Yo le habría dado todo, no solo una limosna.»</p>
+    <p style="margin-bottom:24px;">Luego entró una mujer pobre con un niño pequeño. Oró con fervor, y al marcharse, sin darse cuenta, dejó caer su pequeño monedero. El hombre rico, que aún estaba cerca, lo recogió y se lo guardó en el bolsillo. El hombre en la cruz, indignado, quiso bajar y hacer justicia. Pero Jesús, desde abajo, le susurró: «Quédate quieto y calla.»</p>
+    <p style="margin-bottom:24px;">Más tarde entró un marinero joven, que claramente llevaba una larga travesía encima. Oró brevemente y se quedó dormido en el banco. Poco después entró un anciano que empezó a insultar al marinero, acusándolo de borracho y vago. El hombre en la cruz quiso intervenir, gritar, defender al muchacho inocente. Y de nuevo, Jesús le dijo: «Quédate quieto y calla.»</p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#4a0a1a;margin:32px 0 16px;border-left:4px solid #c9a84c;padding-left:16px;">La lección que no esperaba</h3>
+    <p style="margin-bottom:24px;">Al terminar el día, Jesús le dijo al hombre que bajara de la cruz. El hombre, lleno de rabia e indignación, reclamó: «¿Cómo pudiste quedarte callado? ¡El rico robó a la pobre! ¡El anciano insultó al inocente! ¿Dónde está la justicia?»</p>
+    <p style="margin-bottom:24px;">Y Jesús respondió con calma: «Cuando el rico recogió el monedero, la mujer pobre no lo notó. Llegó a casa, lo buscó desesperadamente y, al no encontrarlo, rezó con más fervor que nunca y encontró paz. El marinero que parecía borracho llevaba meses en el mar y esta era su primera noche en tierra. Si no se hubiera dormido aquí, habría ido a buscar alcohol y habría destruido su noche. Y el anciano que le insultó no era un mal hombre: estaba confundiendo al marinero con el hombre que hace años mató a su hijo. No era odio, era dolor.»</p>
+    <blockquote style="border-left:4px solid #c9a84c;padding:20px 24px;background:#faf6ee;margin:32px 0;font-style:italic;color:#3a2010;line-height:1.85;">
+      <p style="margin:0;">«Tú solo veías una pequeña parte de la historia. Yo veo la vida entera de cada persona. Por eso, cuando estás en mi lugar, lo que parece injusto desde fuera puede ser exactamente lo que alguien necesita.»</p>
+    </blockquote>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#4a0a1a;margin:32px 0 16px;border-left:4px solid #c9a84c;padding-left:16px;">La conexión con Fátima</h3>
+    <p style="margin-bottom:24px;">Este relato me recuerda el mensaje de Fátima. La Virgen no vino a explicar el sufrimiento del mundo. Vino a invitarnos a confiar: a rezar, a ofrecer, a no perder la fe aunque no entendamos. Igual que el hombre en la cruz no podía ver lo que veía Jesús, nosotros tampoco vemos el cuadro completo de la vida de los demás, ni de la nuestra propia.</p>
+    <p style="margin-bottom:28px;">La oración del Rosario es precisamente eso: un acto de confianza. Un «me pongo en tus manos» repetido misterio a misterio. Un reconocimiento de que hay una mirada más grande que la nuestra, y que esa mirada es amor.</p>
+    <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:28px 32px;margin:32px 0;border-left:4px solid #c9a84c;">
+      <p style="font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:#f5f0e8;line-height:1.85;margin:0;">«Tú solo veías una pequeña parte de la historia. Yo veo la vida entera de cada persona.»</p>
+    </div>
+    <div style="margin-top:40px;padding-top:20px;border-top:1px solid rgba(201,168,76,0.3);text-align:right;">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:#7a1a2e;">— José Francisco</span>
     </div>
   </div>
+</article>
+</div>
+<div id="art-josefco-17mar-full" style="display:none;margin-top:20px;">
+<article style="margin-bottom:60px;">
+  <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:32px;text-align:center;">
+    <div style="display:inline-block;background:#c9a84c;color:#4a0a1a;font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;padding:6px 14px;margin-bottom:14px;font-weight:700;">✦ Reflexión bíblica</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.4rem,4vw,2rem);color:#f5f0e8;font-weight:700;line-height:1.2;margin:0;">Cuando una historia pequeña cambia la historia</h2>
+  </div>
+  <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:14px 32px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div style="font-family:'Playfair Display',serif;font-size:1rem;color:#f5f0e8;font-style:italic;">José Francisco</div>
+    <div style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.15em;color:rgba(201,168,76,0.85);text-transform:uppercase;">17 de marzo de 2026</div>
+  </div>
+  <div style="background:#fff;padding:40px 32px;border:1px solid rgba(201,168,76,0.2);border-top:none;font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.9;color:#3a2010;">
+    <p style="margin-bottom:24px;"><span style="font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:#6b1a2a;float:left;line-height:0.82;margin:8px 12px 0 0;">E</span>l Libro de Rut es uno de los relatos más breves de la Biblia, pero cuenta una historia muy humana. Una familia de Belén se marcha a Moab a causa del hambre. El padre muere. Los dos hijos se casan con mujeres moabitas. Y luego, los dos hijos también mueren. Noemí, la madre, se queda sola en tierra extranjera, sin marido, sin hijos, sin futuro visible.</p>
+    <p style="margin-bottom:24px;">Decide volver a su tierra. A sus nueras les dice que se vayan, que busquen un nuevo futuro en sus propios pueblos. Una de ellas, Orfá, la besa y se marcha. Pero Rut se aferra a ella y pronuncia unas palabras que han atravesado siglos: «A donde tú vayas, yo iré; donde tú vivas, yo viviré; tu pueblo será mi pueblo y tu Dios será mi Dios.»</p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#4a0a1a;margin:32px 0 16px;border-left:4px solid #c9a84c;padding-left:16px;">Una decisión que cambia todo</h3>
+    <p style="margin-bottom:24px;">Esa decisión de Rut —quedarse, acompañar, fidelidad sin garantías— cambia el curso de una historia que ella no podía imaginar. Llegan a Belén. Rut va a espigar al campo de Booz, un hombre rico y bueno que resulta ser pariente de Noemí. Booz la trata con respeto, le da agua, le permite comer con sus trabajadores, le ordena a los segadores que dejen caer espigas a propósito para que ella las recoja.</p>
+    <p style="margin-bottom:24px;">Al final, Booz la toma por esposa. De esa unión nacerá Obed, el padre de Jesé, el padre de David. Y de la línea de David nacerá Jesús de Nazaret. Una mujer extranjera, viuda, sin recursos, que tomó una decisión de fidelidad en medio de la desolación, se convierte en parte del árbol genealógico del Salvador.</p>
+    <blockquote style="border-left:4px solid #c9a84c;padding:20px 24px;background:#faf6ee;margin:32px 0;font-style:italic;color:#3a2010;line-height:1.85;">
+      <p style="margin:0;">«A donde tú vayas, yo iré; donde tú vivas, yo viviré; tu pueblo será mi pueblo y tu Dios será mi Dios.»</p>
+      <p style="margin:8px 0 0;font-size:0.9rem;color:#9a6a4a;">— Rut 1, 16</p>
+    </blockquote>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#4a0a1a;margin:32px 0 16px;border-left:4px solid #c9a84c;padding-left:16px;">Lo que nos dice hoy</h3>
+    <p style="margin-bottom:24px;">La historia de Rut nos recuerda que Dios trabaja a través de decisiones pequeñas, de fidelidades cotidianas, de actos de amor que no parecen grandiosos pero que tienen un peso enorme en la historia real. No hacen falta grandes gestos. Hace falta quedarse cuando todo invita a marcharse. Hace falta acompañar cuando nadie te lo exige.</p>
+    <p style="margin-bottom:24px;">En el Apostolado de Fátima hacemos algo parecido: nos quedamos. Rezamos cuando podría parecer que no sirve de nada. Acompañamos a personas que quizás nunca sabremos cuánto necesitaban ese acompañamiento. Y confiamos en que Dios, que vio la fidelidad de Rut, también ve la nuestra.</p>
+    <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:28px 32px;margin:32px 0;border-left:4px solid #c9a84c;">
+      <p style="font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:#f5f0e8;line-height:1.85;margin:0;">Dios trabaja a través de decisiones pequeñas, de fidelidades cotidianas, de actos de amor que no parecen grandiosos pero que tienen un peso enorme en la historia real.</p>
+    </div>
+    <div style="margin-top:40px;padding-top:20px;border-top:1px solid rgba(201,168,76,0.3);text-align:right;">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:#7a1a2e;">— José Francisco</span>
+    </div>
+  </div>
+</article>
+</div>
+<div id="art-rafael-verger-full" style="display:none;margin-top:20px;">
+<article style="margin-bottom:60px;">
+  <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:32px;text-align:center;">
+    <div style="display:inline-block;background:#c9a84c;color:#4a0a1a;font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;padding:6px 14px;margin-bottom:14px;font-weight:700;">✦ Reflexión pastoral</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.4rem,4vw,2rem);color:#f5f0e8;font-weight:700;line-height:1.2;margin:0;">Hacia una Nueva Evangelización</h2>
+  </div>
+  <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:14px 32px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div style="font-family:'Playfair Display',serif;font-size:1rem;color:#f5f0e8;font-style:italic;">Rafael Verger</div>
+    <div style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.15em;color:rgba(201,168,76,0.85);text-transform:uppercase;">9 de marzo de 2026</div>
+  </div>
+  <div style="background:#fff;padding:40px 32px;border:1px solid rgba(201,168,76,0.2);border-top:none;font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.9;color:#3a2010;">
+    <p style="margin-bottom:24px;"><span style="font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:#6b1a2a;float:left;line-height:0.82;margin:8px 12px 0 0;">L</span>a fe hay que cuidarla. Como todo lo que vale en la vida, necesita atención, tiempo y renovación. Y hoy, más que nunca, la Iglesia nos invita a pasar de una acción personal de fe a una acción expansiva: compartirla, comunicarla, hacerla visible.</p>
+    <p style="margin-bottom:24px;">La Nueva Evangelización no es un concepto nuevo inventado por los teólogos modernos. Es la respuesta de la Iglesia a una pregunta muy concreta: ¿cómo anunciamos el Evangelio a personas que ya fueron bautizadas, que conocen a Cristo de nombre, pero que se han alejado de la fe viva? No es misión en tierras lejanas. Es misión en nuestro barrio, en nuestra familia, en nuestra comunidad.</p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#4a0a1a;margin:32px 0 16px;border-left:4px solid #c9a84c;padding-left:16px;">Nuevo en el ardor, en los métodos, en la expresión</h3>
+    <p style="margin-bottom:24px;">San Juan Pablo II, que acuñó esta expresión, decía que la Nueva Evangelización debía ser nueva en su ardor, en sus métodos y en su expresión. No el mismo mensaje dicho de la misma manera esperando resultados diferentes. Sino el mismo mensaje eterno comunicado con la frescura, la creatividad y la valentía que el momento histórico requiere.</p>
+    <p style="margin-bottom:24px;">Esto implica salir. No esperar a que la gente venga a nosotros. La Virgen de Fátima nos da un ejemplo hermoso: ella no esperó que los pastorcillos fueran a buscarla. Fue ella quien los buscó. Salió a su encuentro en un lugar ordinario, en medio de su vida cotidiana, mientras cuidaban los rebaños.</p>
+    <blockquote style="border-left:4px solid #c9a84c;padding:20px 24px;background:#faf6ee;margin:32px 0;font-style:italic;color:#3a2010;line-height:1.85;">
+      <p style="margin:0;">La Nueva Evangelización no es hablar más de Dios. Es vivir de tal manera que nuestra vida haga preguntas que solo Dios puede responder.</p>
+    </blockquote>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#4a0a1a;margin:32px 0 16px;border-left:4px solid #c9a84c;padding-left:16px;">El Apostolado como escuela de evangelización</h3>
+    <p style="margin-bottom:24px;">El Apostolado de Fátima es, en sí mismo, una forma de Nueva Evangelización. Cuando rezamos el Rosario en público, cuando compartimos un artículo de reflexión, cuando organizamos una peregrinación o simplemente cuando hablamos con naturalidad de nuestra fe a quienes nos rodean, estamos evangelizando.</p>
+    <p style="margin-bottom:24px;">No hace falta ser teólogo. No hace falta tener respuesta para todas las preguntas. Hace falta, como decía el Beato Carlos de Foucauld, ser una «presencia» del amor de Dios allí donde estamos. Una presencia silenciosa pero real, que atrae por lo que es, no solo por lo que dice.</p>
+    <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:28px 32px;margin:32px 0;border-left:4px solid #c9a84c;">
+      <p style="font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:#f5f0e8;line-height:1.85;margin:0;">La Virgen no esperó a que los pastorcillos fueran a buscarla. Fue ella quien los buscó. Salió a su encuentro en un lugar ordinario, en medio de su vida cotidiana.</p>
+    </div>
+    <div style="margin-top:40px;padding-top:20px;border-top:1px solid rgba(201,168,76,0.3);text-align:right;">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:#7a1a2e;">— Rafael Verger</span>
+    </div>
+  </div>
+</article>
+</div>
+<div id="art-rafael-semana-santa-full" style="display:none;margin-top:20px;">
+<article style="margin-bottom:60px;">
+  <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:32px;text-align:center;">
+    <div style="display:inline-block;background:#c9a84c;color:#4a0a1a;font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;padding:6px 14px;margin-bottom:14px;font-weight:700;">✦ Reflexión de Semana Santa</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.4rem,4vw,2rem);color:#f5f0e8;font-weight:700;line-height:1.2;margin:0;">Semana Santa: ¿vacaciones o encuentro con Dios?</h2>
+  </div>
+  <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:14px 32px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+    <div style="font-family:'Playfair Display',serif;font-size:1rem;color:#f5f0e8;font-style:italic;">Rafael Verger</div>
+    <div style="font-family:'Cinzel',serif;font-size:0.58rem;letter-spacing:0.15em;color:rgba(201,168,76,0.85);text-transform:uppercase;">25 de marzo de 2026</div>
+  </div>
+  <div style="background:#fff;padding:40px 32px;border:1px solid rgba(201,168,76,0.2);border-top:none;font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.9;color:#3a2010;">
+    <p style="margin-bottom:24px;"><span style="font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:700;color:#6b1a2a;float:left;line-height:0.82;margin:8px 12px 0 0;">L</span>a Semana Santa ha arrancado con un tiempo espléndido que ha animado a muchos españoles a coger el coche, el vuelo o el tren y aprovechar estas pequeñas vacaciones. Pero hay propuestas para todos, también para los que se quedan descansando en casa.</p>
+    <p style="margin-bottom:24px;">La recuperación económica anima a gastar en ocio de nuevo, según los hosteleros. Los españoles no solo viajarán más que hace un año, sino que lo harán por más tiempo. Madrid, Barcelona, Sevilla, Granada y Málaga son los destinos preferidos.</p>
+    <blockquote style="border-left:4px solid #c9a84c;padding:20px 24px;background:#faf6ee;margin:32px 0;font-style:italic;color:#3a2010;line-height:1.85;">
+      <p style="margin:0;">¿Eres cristiano? ¿Son para ti días de vacaciones?</p>
+    </blockquote>
+    <p style="margin-bottom:24px;">El significado de esta semana es puramente cristiano; sin embargo, este período de asueto es empleado por muchas personas para realizar actividades de esparcimiento y diversión. Este «tiempo santo» muy bien podría ser utilizado para reflexionar en qué cosas podemos hacer para realizar cambios positivos en nuestras vidas.</p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;color:#4a0a1a;margin:32px 0 16px;border-left:4px solid #c9a84c;padding-left:16px;">El verdadero significado</h3>
+    <p style="margin-bottom:24px;">Para los cristianos, la Semana Santa es el tiempo litúrgico más importante, dedicado a la oración y a la reflexión sobre los misterios de la pasión, muerte y resurrección de Jesucristo, Hijo de Dios.</p>
+    <p style="margin-bottom:24px;">Los cristianos interpretan la Semana Santa no como el recuerdo de un hecho histórico, ni como un momento de vacaciones sin sentido; para ellos es tiempo de perdón y de reconciliación fraterna, expulsando de sus corazones el rencor, el odio y la envidia.</p>
+    <div style="background:linear-gradient(135deg,#4a0a1a,#6b1a2a);padding:28px 32px;margin:32px 0;border-left:4px solid #c9a84c;">
+      <div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.2em;color:#c9a84c;text-transform:uppercase;margin-bottom:16px;">El Triduo Pascual</div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#f5f0e8;line-height:1.85;margin:0 0 8px;"><strong style="color:#e8c97a;">Jueves Santo</strong> — Abre el Triduo Pascual, el corazón del año litúrgico.</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#f5f0e8;line-height:1.85;margin:0 0 8px;"><strong style="color:#e8c97a;">Viernes Santo</strong> — Se conmemora la muerte en la cruz de nuestro Señor Jesucristo.</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#f5f0e8;line-height:1.85;margin:0 0 8px;"><strong style="color:#e8c97a;">Sábado Santo</strong> — Se medita sobre el misterio de la pasión de Cristo.</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#f5f0e8;line-height:1.85;margin:0;"><strong style="color:#e8c97a;">Domingo de Resurrección</strong> — El momento de mayor júbilo: se celebra la resurrección de Jesús.</p>
+    </div>
+    <p style="margin-bottom:28px;">Sea cual sea la manera en que cada uno viva estos días —de viaje, en casa o en oración—, la invitación de la Iglesia es siempre la misma: detenerse, mirar hacia dentro y renovar el encuentro con el Dios que murió y resucitó por amor a cada uno de nosotros.</p>
+    <div style="margin-top:40px;padding-top:20px;border-top:1px solid rgba(201,168,76,0.3);text-align:right;">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:#7a1a2e;">— Rafael Verger</span>
+    </div>
+  </div>
+</article>
+</div>
+
+
+<script>
+  // Show back button when any article is open
+  document.querySelectorAll('[id^=art-]').forEach(function(div) {
+    var observer = new MutationObserver(function() {
+      document.getElementById('btn-volver-anterior').style.display = 
+        div.style.display !== 'none' ? 'block' : 'none';
+    });
+    observer.observe(div, {attributes: true, attributeFilter: ['style']});
+  });
+</script>
 </section>
 
 <!-- ===== AVISO DE COOKIES ===== -->
