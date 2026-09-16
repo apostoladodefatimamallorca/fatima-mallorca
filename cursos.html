@@ -2117,15 +2117,18 @@ header {
 }
 </style>
 <style>
-  /* #consagracion picks up unwanted 16px side padding from a site-wide [id]{padding-left/right:16px}
-     mobile rule; it already gets breathing room from its parent containers, so we zero it here. */
+  /* The site-wide [id]{padding-left/right:16px} mobile rule, plus several nested containers each
+     adding their own horizontal padding, were stacking up and squeezing this card on phones.
+     We flatten that here so the card uses nearly the full screen width on mobile. */
   #consagracion { padding-left:0 !important; padding-right:0 !important; }
-  @media (max-width:600px){
-    #cursos { padding-left:12px !important; padding-right:12px !important; }
+  @media (max-width:640px){
+    #cursos { padding-left:6px !important; padding-right:6px !important; }
+    #cursos > div { padding-left:6px !important; padding-right:6px !important; }
     #consagracion > div { border-left-width:1px; border-right-width:1px; }
-    #consagracion > div > div[style*="padding:14px 24px"] { padding:12px 16px !important; }
-    #consagracion > div > div[style*="padding:36px 28px 32px"] { padding:28px 14px 24px !important; }
-    #consagracion h3 { font-size:1.5rem !important; }
+    #consagracion div[style*="padding:14px 24px"] { padding:10px 12px !important; }
+    #consagracion > div > div[style*="padding:36px 28px 32px"] { padding:24px 10px 20px !important; }
+    #consagracion div[style*="padding:26px 24px"] { padding:16px 10px !important; }
+    #consagracion h3 { font-size:1.4rem !important; }
   }
 </style>
 </head>
