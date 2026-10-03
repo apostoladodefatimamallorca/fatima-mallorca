@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://fatima-mallorca.es/</loc><lastmod>2026-03-23</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://fatima-mallorca.es/reflexiones.html</loc><lastmod>2026-03-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://fatima-mallorca.es/galeria.html</loc><lastmod>2026-03-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://fatima-mallorca.es/canciones.html</loc><lastmod>2026-03-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://fatima-mallorca.es/noticias.html</loc><lastmod>2026-03-23</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://fatima-mallorca.es/formacion.html</loc><lastmod>2026-03-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://fatima-mallorca.es/rosario-aurora.html</loc><lastmod>2026-03-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://fatima-mallorca.es/enlaces.html</loc><lastmod>2026-03-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://fatima-mallorca.es/</loc><lastmod>2026-10-03</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://fatima-mallorca.es/reflexiones.html</loc><lastmod>2026-10-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fatima-mallorca.es/noticias.html</loc><lastmod>2026-10-03</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://fatima-mallorca.es/cursos.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://fatima-mallorca.es/reflexiones_anteriores.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fatima-mallorca.es/noticias_anteriores.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fatima-mallorca.es/formacion.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fatima-mallorca.es/rosario-aurora.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fatima-mallorca.es/lazos-amor-mariano.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://fatima-mallorca.es/organigrama.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://fatima-mallorca.es/canciones.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://fatima-mallorca.es/galeria.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://fatima-mallorca.es/enlaces.html</loc><lastmod>2026-10-03</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
