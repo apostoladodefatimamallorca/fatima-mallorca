@@ -2219,7 +2219,7 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
       </div>
       <div style="width:100%;max-width:340px;margin:0 auto;border:3px solid #c9a84c;box-shadow:0 8px 32px rgba(74,10,26,0.18);background:#000;">
         <div style="position:relative;width:100%;padding-top:177.78%;">
-          <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLOdF8J944yMw" title="Para entender la fe" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe data-playlist="PLOdF8J944yMw" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLOdF8J944yMw" title="Para entender la fe" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <p style="text-align:center;margin:16px 0 0;"><a href="https://www.youtube.com/playlist?list=PLOdF8J944yMw" target="_blank" rel="noopener" style="font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.12em;color:#6b1a2a;text-decoration:none;border-bottom:1px solid #c9a84c;">VER LA LISTA COMPLETA EN YOUTUBE →</a></p>
@@ -2233,7 +2233,7 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
       </div>
       <div style="width:100%;max-width:340px;margin:0 auto;border:3px solid #c9a84c;box-shadow:0 8px 32px rgba(74,10,26,0.18);background:#000;">
         <div style="position:relative;width:100%;padding-top:177.78%;">
-          <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGD6A4_hKdZY" title="Caminando con María" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe data-playlist="PLGD6A4_hKdZY" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLGD6A4_hKdZY" title="Caminando con María" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <p style="text-align:center;margin:16px 0 0;"><a href="https://www.youtube.com/playlist?list=PLGD6A4_hKdZY" target="_blank" rel="noopener" style="font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.12em;color:#6b1a2a;text-decoration:none;border-bottom:1px solid #c9a84c;">VER LA LISTA COMPLETA EN YOUTUBE →</a></p>
@@ -2247,7 +2247,7 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
       </div>
       <div style="width:100%;max-width:340px;margin:0 auto;border:3px solid #c9a84c;box-shadow:0 8px 32px rgba(74,10,26,0.18);background:#000;">
         <div style="position:relative;width:100%;padding-top:177.78%;">
-          <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLQjylT_yuBHM" title="María, Madre de América" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe data-playlist="PLQjylT_yuBHM" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLQjylT_yuBHM" title="María, Madre de América" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <p style="text-align:center;margin:16px 0 0;"><a href="https://www.youtube.com/playlist?list=PLQjylT_yuBHM" target="_blank" rel="noopener" style="font-family:'Cinzel',serif;font-size:0.8rem;letter-spacing:0.12em;color:#6b1a2a;text-decoration:none;border-bottom:1px solid #c9a84c;">VER LA LISTA COMPLETA EN YOUTUBE →</a></p>
@@ -2528,4 +2528,23 @@ document.addEventListener('click', function(e) {
 </script>
 <!-- ===== FIN AVISO COOKIES ===== -->
 
+
+<!-- Últimos vídeos PUBLICADOS de cada línea (videos-latest.json lo actualiza GitHub automáticamente; los programados no se muestran) -->
+<script>
+(function(){
+  try{
+    fetch('videos-latest.json?t=' + Date.now(), {cache:'no-store'})
+      .then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(d){
+        if(!d) return;
+        document.querySelectorAll('iframe[data-playlist]').forEach(function(f){
+          var pid = f.getAttribute('data-playlist'), v = d[pid];
+          if(v && v.videoId){
+            f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(v.videoId) + '?list=' + encodeURIComponent(pid);
+          }
+        });
+      }).catch(function(){});
+  }catch(e){}
+})();
+</script>
 </body></html>
