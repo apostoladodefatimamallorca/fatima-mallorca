@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1a0508"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="400" fill="#1a0508"/>
+  <rect width="800" height="400" fill="url(#sky)"/>
+  <!-- Rays of light -->
+  <g opacity="0.15" fill="#f9d77e">
+    <polygon points="400,50 380,400 420,400"/>
+    <polygon points="400,50 340,400 380,400"/>
+    <polygon points="400,50 420,400 460,400"/>
+    <polygon points="400,50 290,400 340,400"/>
+    <polygon points="400,50 460,400 510,400"/>
+    <polygon points="400,50 240,400 290,400"/>
+    <polygon points="400,50 510,400 560,400"/>
+  </g>
+  <!-- Oak tree (holm oak of Fatima) -->
+  <ellipse cx="400" cy="290" rx="60" ry="45" fill="#1a3a0a" opacity="0.8"/>
+  <rect x="394" y="310" width="12" height="80" fill="#2a1a0a"/>
+  <!-- Our Lady silhouette -->
+  <ellipse cx="400" cy="175" rx="18" ry="22" fill="#f9d77e" opacity="0.9"/>
+  <path d="M382,195 Q370,240 365,290 L435,290 Q430,240 418,195 Z" fill="#f0f0ff" opacity="0.85"/>
+  <!-- Crown/halo -->
+  <circle cx="400" cy="158" r="28" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.8"/>
+  <g fill="#c9a84c" opacity="0.8">
+    <polygon points="400,130 403,140 396,140"/>
+    <polygon points="415,133 416,143 409,141"/>
+    <polygon points="385,133 391,141 384,143"/>
+    <polygon points="424,141 423,151 417,148"/>
+    <polygon points="376,141 383,148 377,151"/>
+  </g>
+  <!-- Three children silhouettes -->
+  <ellipse cx="330" cy="332" rx="10" ry="12" fill="#0a0205" opacity="0.8"/>
+  <rect x="325" y="342" width="10" height="28" rx="3" fill="#0a0205" opacity="0.8"/>
+  <ellipse cx="400" cy="330" rx="11" ry="13" fill="#0a0205" opacity="0.8"/>
+  <rect x="394" y="342" width="12" height="30" rx="3" fill="#0a0205" opacity="0.8"/>
+  <ellipse cx="470" cy="332" rx="10" ry="12" fill="#0a0205" opacity="0.8"/>
+  <rect x="465" y="342" width="10" height="28" rx="3" fill="#0a0205" opacity="0.8"/>
+</svg>
