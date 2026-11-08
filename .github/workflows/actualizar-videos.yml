@@ -1,0 +1,63 @@
+name: Actualizar vídeos publicados
+
+on:
+  schedule:
+    - cron: "17 5,11,17 * * *"   # tres veces al día (hora UTC)
+  workflow_dispatch:               # botón para ejecutarlo a mano
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Buscar el último vídeo público de cada línea
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, xml.etree.ElementTree as ET
+          LISTAS = {
+              "PLOdF8J944yMw": "Para entender la fe",
+              "PLGD6A4_hKdZY": "Caminando con María",
+              "PLQjylT_yuBHM": "María, Madre de América",
+          }
+          NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
+          ARCHIVO = "videos-latest.json"
+          datos = {}
+          if os.path.exists(ARCHIVO):
+              try:
+                  datos = json.load(open(ARCHIVO, encoding="utf-8"))
+              except Exception:
+                  datos = {}
+          for pid, nombre in LISTAS.items():
+              url = f"https://www.youtube.com/feeds/videos.xml?playlist_id={pid}"
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (fatima-mallorca.es)"})
+                  xml = urllib.request.urlopen(req, timeout=30).read()
+                  raiz = ET.fromstring(xml)
+                  entradas = []
+                  for e in raiz.findall("a:entry", NS):
+                      vid = e.findtext("yt:videoId", namespaces=NS)
+                      pub = e.findtext("a:published", namespaces=NS)
+                      tit = e.findtext("a:title", namespaces=NS)
+                      if vid and pub:
+                          entradas.append((pub, vid, tit))
+                  if entradas:
+                      pub, vid, tit = max(entradas)
+                      datos[pid] = {"linea": nombre, "videoId": vid, "titulo": tit, "publicado": pub}
+                      print(f"OK  {nombre}: {tit} ({pub})")
+                  else:
+                      print(f"AVISO  {nombre}: la lista no tiene vídeos públicos; se mantiene lo anterior")
+              except Exception as ex:
+                  print(f"ERROR  {nombre}: {ex}; se mantiene lo anterior")
+          json.dump(datos, open(ARCHIVO, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+          PY
+
+      - name: Guardar cambios si los hay
+        run: |
+          git config user.name "Actualizador automático"
+          git config user.email "actions@users.noreply.github.com"
+          git add videos-latest.json
+          git diff --cached --quiet || (git commit -m "Actualizar últimos vídeos publicados" && git push)
