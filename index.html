@@ -2278,13 +2278,15 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
     </nav>
   </div>
 </header>
+<div id="ra-barra" style="background:linear-gradient(90deg,#4a0a1a,#6b1a2a,#4a0a1a);border-bottom:2px solid #c9a84c;padding:11px 16px;text-align:center;"><a href="reflexiones.html" style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:#f5f0e8;text-decoration:none;">Lee la reflexión del mes →</a></div>
+
 
 <!-- ===================== HERO ===================== -->
 <section id="inicio" class="hero">
   <div class="hero-pattern"></div>
   <div class="hero-glow"></div>
   <div class="hero-content" style="display:flex;align-items:center;justify-content:center;gap:60px;flex-wrap:wrap;text-align:center;">
-    <img src="3799d253309e.png" alt="Nuestra Señora de Fátima" style="height:420px;max-width:280px;object-fit:contain;filter:drop-shadow(0 0 40px rgba(201,168,76,0.4));animation:fadeInUp 1.4s ease both;flex-shrink:0;">
+    <img fetchpriority="high" src="3799d253309e.png" alt="Nuestra Señora de Fátima" style="height:420px;max-width:280px;object-fit:contain;filter:drop-shadow(0 0 40px rgba(201,168,76,0.4));animation:fadeInUp 1.4s ease both;flex-shrink:0;">
     <div>
     <div class="hero-ornament">
       <div class="hero-ornament-line"></div>
@@ -2312,6 +2314,11 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
 
     </div>
   </div>
+</section>
+
+<!-- ===================== REFLEXIÓN DEL MES (datos en reflexion-actual.js) ===================== -->
+<section id="reflexion-destacada">
+  <div style="text-align:center;"><a href="reflexiones.html" style="font-family:'Cinzel',serif;color:#6b1a2a;">LEER LA REFLEXIÓN DEL MES →</a></div>
 </section>
 
 <!-- ===================== ÚLTIMO VÍDEO (se actualiza solo desde YouTube) ===================== -->
@@ -2405,7 +2412,7 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
       <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:#6b4a3a;margin:14px 0 0;text-align:center !important;">Es gratuito. Solo tienes que pulsar el botón y luego «Unirse al grupo».</p>
     </div>
     <div class="wa-qr" style="flex:none;text-align:center;">
-      <div style="background:#fff;border:3px solid #c9a84c;border-radius:14px;padding:12px;display:inline-block;box-shadow:0 6px 20px rgba(74,10,26,0.12);"><img src="ff61140ecf68.jpg" alt="Código QR para unirse al grupo de WhatsApp del Apostolado de Fátima Mallorca" width="180" height="180" style="display:block;width:180px;height:180px;"></div>
+      <div style="background:#fff;border:3px solid #c9a84c;border-radius:14px;padding:12px;display:inline-block;box-shadow:0 6px 20px rgba(74,10,26,0.12);"><img loading="lazy" decoding="async" src="ff61140ecf68.jpg" alt="Código QR para unirse al grupo de WhatsApp del Apostolado de Fátima Mallorca" width="180" height="180" style="display:block;width:180px;height:180px;"></div>
       <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:#6b4a3a;margin:10px 0 0;max-width:210px;">¿Estás en el ordenador? Escanéalo con la cámara de tu móvil</p>
     </div>
   </div>
@@ -2447,7 +2454,7 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
         
         <!-- Foto del delegado -->
         <div style="flex-shrink:0;text-align:center;">
-          <img src="4474f8ed23f7.jpg" alt="Delegado del Apostolado Mundial de Fátima en Mallorca"
+          <img loading="lazy" decoding="async" src="4474f8ed23f7.jpg" alt="Delegado del Apostolado Mundial de Fátima en Mallorca"
             style="width:180px;height:180px;object-fit:cover;object-position:top;border-radius:50%;border:3px solid var(--gold);box-shadow:0 4px 24px rgba(0,0,0,0.4);">
           <div style="margin-top:12px;font-family:'Cinzel',serif;font-size:0.6rem;letter-spacing:0.15em;color:var(--gold);text-transform:uppercase;">Delegado</div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:0.95rem;color:var(--gold-pale);font-style:italic;">Apostolado Mundial de Fátima<br>Delegación de Mallorca</div>
@@ -3084,13 +3091,7 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
     }
   </style>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>);
-      localStorage.setItem('amf_solicitudes', JSON.stringify(solicitudes));
-      document.getElementById('u-ok').style.display='block';
-      e.target.reset();
-      setTimeout(function(){document.getElementById('u-ok').style.display='none';},6000);
-    }
-  </script>
+  
 </section>
 
 <!-- ===================== FOOTER ===================== -->
@@ -3099,7 +3100,7 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
 <section style="background:linear-gradient(135deg,#4a0f1c,#6b1a2a);padding:40px 24px;text-align:center;">
   <div style="max-width:1100px;margin:0 auto;">
     <div style="font-family:'Cinzel',serif;font-size:0.65rem;letter-spacing:0.3em;color:#c9a84c;text-transform:uppercase;margin-bottom:20px;">✦ Visitantes de todo el mundo</div>
-    <a href="https://info.flagcounter.com/OzsZ"><img src="https://s01.flagcounter.com/count2/OzsZ/bg_4A0F1C/txt_C9A84C/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" style="max-width:100%;"></a>
+    <a href="https://info.flagcounter.com/OzsZ"><img loading="lazy" decoding="async" src="https://s01.flagcounter.com/count2/OzsZ/bg_4A0F1C/txt_C9A84C/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" style="max-width:100%;"></a>
   </div>
 </section>
 <!-- ===== FIN CONTADOR ===== -->
@@ -3122,25 +3123,25 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
 
         <!-- Email -->
         <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
-          <a data-em href="#" style="display:block;width:56px;height:56px;min-width:56px;border-radius:12px;overflow:hidden;flex-shrink:0;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.25);"><img src="97a7059780de.jpg" alt="Correo electrónico" style="width:56px;height:56px;display:block;"></a>
+          <a data-em href="#" style="display:block;width:56px;height:56px;min-width:56px;border-radius:12px;overflow:hidden;flex-shrink:0;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.25);"><img loading="lazy" decoding="async" src="97a7059780de.jpg" alt="Correo electrónico" style="width:56px;height:56px;display:block;"></a>
           <span class="sig-txt" style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(245,240,232,1);text-decoration:none;word-break:break-all;"><span data-em></span></span>
         </div>
 
         <!-- WhatsApp -->
         <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
-          <a href="https://chat.whatsapp.com/Jp37U8rdcur7d0eeYimJdJ" target="_blank" rel="noopener" style="display:block;width:56px;height:56px;min-width:56px;border-radius:12px;overflow:hidden;flex-shrink:0;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.25);"><img src="2dde16759243.jpg" alt="WhatsApp" style="width:56px;height:56px;display:block;"></a>
+          <a href="https://chat.whatsapp.com/Jp37U8rdcur7d0eeYimJdJ" target="_blank" rel="noopener" style="display:block;width:56px;height:56px;min-width:56px;border-radius:12px;overflow:hidden;flex-shrink:0;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.25);"><img loading="lazy" decoding="async" src="2dde16759243.jpg" alt="WhatsApp" style="width:56px;height:56px;display:block;"></a>
           <a href="https://chat.whatsapp.com/Jp37U8rdcur7d0eeYimJdJ" target="_blank" rel="noopener" class="sig-txt" style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(245,240,232,1);text-decoration:none;">Únete a nuestra comunidad de WhatsApp</a>
         </div>
 
         <!-- Facebook -->
         <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
-          <a href="https://www.facebook.com/share/1Gxo5XroGE/?mibextid=wwXIfr" target="_blank" rel="noopener" style="display:block;width:56px;height:56px;min-width:56px;border-radius:12px;overflow:hidden;flex-shrink:0;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.25);"><img src="7bc5075ad7e9.jpg" alt="Facebook" style="width:56px;height:56px;display:block;"></a>
+          <a href="https://www.facebook.com/share/1Gxo5XroGE/?mibextid=wwXIfr" target="_blank" rel="noopener" style="display:block;width:56px;height:56px;min-width:56px;border-radius:12px;overflow:hidden;flex-shrink:0;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.25);"><img loading="lazy" decoding="async" src="7bc5075ad7e9.jpg" alt="Facebook" style="width:56px;height:56px;display:block;"></a>
           <a href="https://www.facebook.com/share/1Gxo5XroGE/?mibextid=wwXIfr" target="_blank" rel="noopener" class="sig-txt" style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(245,240,232,1);text-decoration:none;">Apostolado de Fátima Mallorca</a>
         </div>
 
         <!-- Instagram -->
         <div style="display:flex;align-items:center;gap:16px;">
-          <a href="https://www.instagram.com/apostoladodefatimamallorca" target="_blank" rel="noopener" style="display:block;width:56px;height:56px;min-width:56px;border-radius:12px;overflow:hidden;flex-shrink:0;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.25);"><img src="03469be7700b.jpg" alt="Instagram" style="width:56px;height:56px;display:block;"></a>
+          <a href="https://www.instagram.com/apostoladodefatimamallorca" target="_blank" rel="noopener" style="display:block;width:56px;height:56px;min-width:56px;border-radius:12px;overflow:hidden;flex-shrink:0;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,0.25);"><img loading="lazy" decoding="async" src="03469be7700b.jpg" alt="Instagram" style="width:56px;height:56px;display:block;"></a>
           <a href="https://www.instagram.com/apostoladodefatimamallorca" target="_blank" rel="noopener" class="sig-txt" style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:rgba(245,240,232,1);text-decoration:none;">@apostoladodefatimamallorca</a>
         </div>
       </div>
@@ -3201,7 +3202,7 @@ body{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:opt
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 var modalTexts = {
   'aviso-legal': `
     <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;color:#4a0a1a;margin-bottom:24px;">Aviso Legal</h2>
@@ -3375,4 +3376,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 <!-- ===== FIN AVISO COOKIES ===== -->
 
+<script src="reflexion-actual.js" defer></script>
+<script src="web.js" defer></script>
 </body></html>
